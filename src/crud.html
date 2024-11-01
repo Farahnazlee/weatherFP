@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Activity Checklist Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <h1>WEATHER FORECAST</h1>
+            <nav>
+                <ul class="header-nav">
+                    <li><a href="index.html">Weather Forecast</a></li>
+                    <li><a href="crud.html">Manage Activities</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div class="activity-box">
+            <h2>Manage Your Outdoor Activities</h2>
+
+            <!-- Form to create/update activities -->
+            <div class="form-group">
+                <label for="fileName">Activity Name</label>
+                <input id="fileName" type="text" class="form-control" placeholder="Enter activity name">
+            </div>
+            <div class="form-group">
+                <label for="fileContents">Required Equipment / Notes</label>
+                <textarea id="fileContents" class="form-control" rows="4" placeholder="Enter required equipment or notes"></textarea>
+            </div>
+
+            <!-- Buttons for CRUD operations -->
+            <div class="button-group">
+                <button id="btnCreate" class="btn btn-primary">Create</button>
+                <button id="btnRead" class="btn btn-secondary">Read</button>
+                <button id="btnUpdate" class="btn btn-warning">Update</button>
+                <button id="btnDelete" class="btn btn-danger">Delete</button>
+            </div>
+
+            <!-- Display Area for Read Operation -->
+            <div id="displayArea" class="display-area"></div>
+        </div>
+    </div>
+    <!-- JavaScript files for CRUD and weather functionality -->
+    <script src="activity.js"></script>
+</body>
+</html>

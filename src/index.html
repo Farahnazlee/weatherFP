@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WeatherWise - Enhanced Forecast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <h1>WEATHER FORECAST</h1>
+            <nav>
+                <ul class="header-nav">
+                    <li><a href="index.html">Weather Forecast</a></li>
+                    <li><a href="crud.html">Manage Activities</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <form id="locationForm" class="weather-form">
+            <input type="text" id="cityInput" placeholder="Enter city name" required>
+            <button type="submit">Get Weather</button>
+        </form>
+
+        <!-- Weather Insights Section -->
+        <div id="weather-insights" class="info-card">
+            <h3>Weather Insights for Outdoor Activities</h3>
+            <ul id="activity-suggestions" class="activity-list"></ul>
+        </div>
+
+        <!-- Current Weather Information -->
+        <div id="current-weather-info" class="info-card">
+            <h3>Current Weather Details</h3>
+            <div id="weather-details"></div>
+        </div>
+
+        <!-- 5-Day Forecast -->
+        <div id="forecast-info" class="info-card">
+            <h3>5-Day Weather Forecast</h3>
+            <div id="forecast-cards" class="forecast-cards-container"></div>
+        </div>
+    </div>
+
+    <script src="weather.js"></script>
+</body>
+</html>

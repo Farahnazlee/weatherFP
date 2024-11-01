@@ -1,0 +1,257 @@
+/* General Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background: url('pic.jpg') no-repeat center center fixed; /* Replace 'pic.jpg' with the background image path */
+  background-size: cover;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Main Header Styling */
+.main-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  color: #ffffff;
+  z-index: 1000;
+}
+
+/* Header Content Centered and Bounded */
+.header-content {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for text readability */
+  padding: 50px 40px;
+  border-radius: 8px;
+  text-align: center;
+  width: 110%;
+  max-width: 4000px; /* Limit width for better centering */
+}
+
+/* Title Styling */
+.main-header h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for text clarity */
+  margin: 0;
+}
+
+/* Header Navigation Styling */
+.header-nav {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.header-nav li {
+  display: inline;
+}
+
+.header-nav li a {
+  color: #aad4ff;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.header-nav li a:hover {
+  color: #ffcc00; /* Hover color for links */
+}
+
+/* Main Content Container */
+.container {
+  margin-top: 250px; /* Space to avoid overlap with the fixed header */
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+}
+
+/* Form Styling for Weather and Activity Manager */
+.weather-form,
+.activity-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+textarea {
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #0288D1;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #026aa7;
+}
+
+/* Boxed Layout for Activity Manager */
+.activity-box {
+  background: rgba(255, 255, 255, 0.95); /* Slightly transparent white */
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  padding: 30px;
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Heading Styling for Activity Manager */
+.activity-box h2 {
+  color: #0288D1;
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Form Group Styling for Activity Manager */
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  font-size: 1em;
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Button Group Styling */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 15px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  flex: 1;
+  transition: background-color 0.3s;
+}
+
+.btn-primary { background-color: #0288D1; }
+.btn-secondary { background-color: #5a5a5a; }
+.btn-warning { background-color: #ffb74d; }
+.btn-danger { background-color: #d32f2f; }
+
+.btn-primary:hover { background-color: #0277bd; }
+.btn-secondary:hover { background-color: #424242; }
+.btn-warning:hover { background-color: #ffa726; }
+.btn-danger:hover { background-color: #c62828; }
+
+/* Display Area Styling for Activity Manager */
+.display-area {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  color: #333;
+  text-align: left;
+  font-size: 0.9em;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+/* Weather Display Card Styling */
+.info-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  padding: 15px;
+  margin: 10px 0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+/* Activity Suggestions Styling */
+.activity-list {
+  list-style: none;
+  padding: 0;
+  color: #333;
+  text-align: left;
+}
+
+/* Forecast Cards Container */
+.forecast-cards-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* Individual Forecast Card */
+.forecast-card {
+  background: #ffffff;
+  border-radius: 8px;
+  width: 100px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 0.9em;
+}
+
+.forecast-card img {
+  width: 40px;
+  height: 40px;
+}
+
+.forecast-date {
+  font-size: 0.85em;
+  color: #0288D1;
+  margin-bottom: 5px;
+}
+
+.forecast-temp {
+  font-size: 1em;
+  font-weight: bold;
+  color: #333;
+}
+
+.forecast-condition {
+  font-size: 0.85em;
+  color: #333;
+}
+
+/* Weather Details Styling */
+#weather-details {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 5px;
+  font-size: 0.9em;
+}
+
+#weather-details p {
+  margin: 0;
+}
